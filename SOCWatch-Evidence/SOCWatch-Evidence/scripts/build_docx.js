@@ -272,7 +272,7 @@ const doc = new Document({
         new Paragraph({
           alignment: AlignmentType.CENTER,
           spacing: { after: 100 },
-          children: [new TextRun({ text: "Student Number: CCA5008", size: 22 })],
+          children: [new TextRun({ text: "Student Number: REDACTED", size: 22 })],
         }),
         new Paragraph({
           alignment: AlignmentType.CENTER,
@@ -281,7 +281,7 @@ const doc = new Document({
         }),
         new Paragraph({
           alignment: AlignmentType.CENTER,
-          children: [new TextRun({ text: "AWS Account: 477013660512  |  Region: ap-south-1 (Mumbai)", size: 20, color: "666666" })],
+          children: [new TextRun({ text: "AWS Account: REDACTED  |  Region: ap-south-1 (Mumbai)", size: 20, color: "666666" })],
         }),
         new Paragraph({ children: [new PageBreak()] }),
 
@@ -402,7 +402,7 @@ const doc = new Document({
         pBold("5. Decisions required"),
         bullet("Whether to keep the security group's admin ports (22/443/3389) open to 0.0.0.0/0 through the Week 8 demonstration, or narrow/terminate immediately after — see Section 2.3."),
         pBold("6. Individual contributions"),
-        bullet("All AWS account configuration, infrastructure diagnosis and repair, Wazuh installation, agent enrolment, detection-use-case validation, dashboard evidence capture, and documentation completed by Nishen Madawa Abedeera (Student Number: CCA5008)."),
+        bullet("All AWS account configuration, infrastructure diagnosis and repair, Wazuh installation, agent enrolment, detection-use-case validation, dashboard evidence capture, and documentation completed by Nishen Madawa Abedeera (Student Number: REDACTED)."),
         pBold("7. Plan for next week"),
         bullet("Rehearse and perform the Week 8 live demonstration, then tear down or lock down the lab."),
 
@@ -421,7 +421,7 @@ const doc = new Document({
         // ---------------- 4. ENVIRONMENT & IAM SETUP ----------------
         h1("4. Installation Guide — Part A: AWS Account Foundation"),
         h2("4.1 Prerequisites"),
-        bullet("An AWS account with billing enabled (account 477013660512)."),
+        bullet("An AWS account with billing enabled (account REDACTED)."),
         bullet("AWS CLI v2 installed locally (already installed: aws-cli/2.36.49)."),
         bullet("Terraform installed locally (already installed: v1.16.2)."),
         bullet("An SSH key pair for lab access (already generated: ~/.ssh/socwatch, ed25519)."),
@@ -810,7 +810,7 @@ const doc = new Document({
 
         h1("14. Individual Contribution Statement"),
         p(
-          "This project is completed individually. All AWS account configuration (IAM baseline, budget, security group design), infrastructure-as-code (Terraform), Wazuh installation, agent enrolment, detection use-case testing and reporting is designed, executed and defensible by the author, Nishen Madawa Abedeera (Student Number: CCA5008)."
+          "This project is completed individually. All AWS account configuration (IAM baseline, budget, security group design), infrastructure-as-code (Terraform), Wazuh installation, agent enrolment, detection use-case testing and reporting is designed, executed and defensible by the author, Nishen Madawa Abedeera (Student Number: REDACTED)."
         ),
       ],
     },

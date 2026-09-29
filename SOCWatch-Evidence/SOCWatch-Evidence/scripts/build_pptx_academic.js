@@ -86,7 +86,7 @@ let n = 1;
     x: 0.7, y: 4.55, w: 10, h: 0.4, fontFace: FACE, fontSize: 16, bold: true,
     color: "FFFFFF", isTextBox: true, margin: 0,
   });
-  s.addText("Student Number: CCA5008", {
+  s.addText("Student Number: REDACTED", {
     x: 0.7, y: 4.9, w: 8, h: 0.35, fontFace: FACE, fontSize: 14,
     color: "FFFFFF", isTextBox: true, margin: 0,
   });
@@ -313,7 +313,7 @@ let n = 1;
     "All 12 required dashboard screenshots plus 3 bonus captures taken 2026-09-26 (Section 2.2). Remaining: only the Week 8 live demonstration, for which a rehearsal script is already written.",
   ], { y: 1.65, h: 4.0, size: 18, spaceAfter: 16 });
   s.addShape("rect", { x: MARGIN, y: 5.85, w: 12.33, h: 0.02, fill: { color: COLORS.rule }, line: { type: "none" } });
-  s.addText("Contact: Nishen Madawa Abedeera (CCA5008) | nishenmadawa15@gmail.com", {
+  s.addText("Contact: Nishen Madawa Abedeera (REDACTED) | nishenmadawa15@gmail.com", {
     x: MARGIN, y: 6.05, w: 12.33, h: 0.4, fontFace: FACE, fontSize: 14, color: COLORS.muted, isTextBox: true, margin: 0,
   });
   s.addText("Are there questions or feedback?", {

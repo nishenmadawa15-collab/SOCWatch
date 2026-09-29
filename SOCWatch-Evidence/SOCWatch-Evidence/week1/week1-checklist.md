@@ -9,7 +9,7 @@
 - [ ] Mentor approves scope
 
 ## Session note — 2026-09-20
-Completed directly in the AWS console (account 477013660512, region ap-south-1):
+Completed directly in the AWS console (account REDACTED, region ap-south-1):
 - Created IAM user `socwatch-admin` (Access Key ID redacted — see local credentials file, not tracked in git — PowerUserAccess policy, no console password). Secret access key was downloaded once to a local CSV and never recorded here.
 - Created monthly cost budget "$20.00" with three alerts (85% actual, 100% actual, 100% forecasted) emailed to the account owner.
 - Confirmed no existing IAM users/key pairs prior to this session — account was root-only.

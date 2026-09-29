@@ -2,7 +2,7 @@
 
 ## Status as of 2026-09-22: infrastructure exists, provisioned manually (not via Terraform)
 
-Confirmed live via AWS Console (logged in as `socwatch-admin`, account 477013660512, ap-south-1):
+Confirmed live via AWS Console (logged in as `socwatch-admin`, account REDACTED, ap-south-1):
 all 4 instances exist (`wazuh-manager`, `agent-linux-1`, `agent-linux-2`, `agent-windows-1`), the
 security group has all 5 required rules, and a self-signed TLS handshake on the manager's public IP
 port 443 suggests Wazuh may already be installed. Real IPs and details are in `instance-inventory.md`.
