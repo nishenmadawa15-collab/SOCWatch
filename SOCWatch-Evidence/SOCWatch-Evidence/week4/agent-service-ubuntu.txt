@@ -1,0 +1,7 @@
+agent-linux-1 (Ubuntu 22.04, 10.0.0.164) — captured 2026-09-24
+
+$ sudo systemctl status wazuh-agent
+
+● wazuh-agent.service - Wazuh agent
+     Active: active (running) since Tue 2026-09-22 18:41:24 UTC
+     CGroup: wazuh-execd, wazuh-agentd, wazuh-syscheckd, wazuh-logcollector, wazuh-modulesd all running

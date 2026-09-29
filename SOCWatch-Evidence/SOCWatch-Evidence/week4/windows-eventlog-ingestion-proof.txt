@@ -1,0 +1,40 @@
+Windows Event Log ingestion — bonus completeness check (2026-09-24)
+Captured via SSH to wazuh-manager (ubuntu@13.126.121.206), grep against /var/ossec/logs/alerts/alerts.log
+
+Context: agent-windows-1 (agent ID 003) had only produced its "Agent started" heartbeat alert
+immediately after connecting. This file proves genuine Windows Event Log data (not just the
+heartbeat) is being collected via eventchannel and reaching the manager as real alerts.
+
+** Alert 1790226990.75257: - windows,windows_application,
+2026 Sep 24 05:16:30 (agent-windows-1) any->EventChannel
+Rule: 60642 (level 3) -> 'Software protection service scheduled successfully.'
+{"win":{"system":{"providerName":"Microsoft-Windows-Security-SPP","providerGuid":"{E23B33B0-C8C9-472C-A5F9-F2BDFEA0F156}","eventSourceName":"Software Protection Platform Service","eventID":"16384","version":"0","level":"4","task":"0","opcode":"0","keywords":"0x80000000000000","systemTime":"2026-09-24T05:16:29.9886765Z","eventRecordID":"18526","processID":"0","threadID":"0","channel":"Application","computer":"EC2AMAZ-HQ5GUMI","severityValue":"INFORMATION","message":"\"Successfully scheduled Software Protection service for re-start at 2026-09-29T07:02:29Z. Reason: RulesEngine.\""},"eventdata":{"data":"2026-09-29T07:02:29Z, RulesEngine"}}}
+win.system.providerName: Microsoft-Windows-Security-SPP
+win.system.providerGuid: {E23B33B0-C8C9-472C-A5F9-F2BDFEA0F156}
+win.system.eventSourceName: Software Protection Platform Service
+win.system.eventID: 16384
+win.system.channel: Application
+win.system.computer: EC2AMAZ-HQ5GUMI
+win.system.severityValue: INFORMATION
+win.system.message: "Successfully scheduled Software Protection service for re-start at 2026-09-29T07:02:29Z. Reason: RulesEngine."
+
+** Alert 1790227110.76852: - windows,windows_application,
+2026 Sep 24 05:18:30 (agent-windows-1) any->EventChannel
+Rule: 60642 (level 3) -> 'Software protection service scheduled successfully.'
+{"win":{"system":{"providerName":"Microsoft-Windows-Security-SPP","providerGuid":"{E23B33B0-C8C9-472C-A5F9-F2BDFEA0F156}","eventSourceName":"Software Protection Platform Service","eventID":"16384","version":"0","level":"4","task":"0","opcode":"0","keywords":"0x80000000000000","systemTime":"2026-09-24T05:18:30.3791187Z","eventRecordID":"18531","processID":"0","threadID":"0","channel":"Application","computer":"EC2AMAZ-HQ5GUMI","severityValue":"INFORMATION","message":"\"Successfully scheduled Software Protection service for re-start at 2026-09-29T07:02:30Z. Reason: RulesEngine.\""},"eventdata":{"data":"2026-09-29T07:02:30Z, RulesEngine"}}}
+win.system.eventID: 16384
+win.system.channel: Application
+win.system.computer: EC2AMAZ-HQ5GUMI
+win.system.severityValue: INFORMATION
+
+Supporting config check (via SSM Run Command on agent-windows-1, read-only diagnostics):
+- WazuhSvc: Running
+- ossec.conf eventchannel locations configured: Application, Security, System (lines 35-50)
+- Get-WinEvent count on local Security log, last 10 min at check time: 97 events present on the
+  Windows side, confirming the source log itself is active (not all 97 necessarily generate a
+  Wazuh rule match/alert — only events matching a rule are written to alerts.log by default,
+  since manager-side <logall> archiving is not enabled for this lab).
+
+Conclusion: Windows Event Log ingestion (Application channel, via eventchannel) is confirmed
+working end-to-end, independent of the Linux-agent log-ingestion use case already proven in
+week5/week6. This closes the one item flagged as "not yet separately verified" for Week 4.

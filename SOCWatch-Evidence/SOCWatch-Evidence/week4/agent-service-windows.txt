@@ -1,0 +1,11 @@
+agent-windows-1 (Windows Server 2022, 10.0.5.116) — captured 2026-09-24
+via AWS Systems Manager Run Command (AWS-RunPowerShellScript)
+
+PS> Get-Service WazuhSvc
+
+Status   Name      DisplayName
+------   ----      -----------
+Running  WazuhSvc  Wazuh
+
+Install log confirms: "Valid key received", "Started (pid: 3636)", FIM scan started,
+syscollector module started. Manager confirms enrolment (agent ID 003, Active).

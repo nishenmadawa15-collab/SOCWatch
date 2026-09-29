@@ -1,0 +1,23 @@
+# --- Secrets: never commit these ---
+socwatch-admin_credentials.csv
+SOCuser detels.txt
+*.pem
+*.ppk
+**/terraform.tfstate
+**/terraform.tfstate.backup
+**/*.tfvars
+!**/*.tfvars.example
+
+# --- Terraform local cache (huge provider binaries, regenerable via `terraform init`) ---
+**/.terraform/
+**/.terraform.lock.hcl
+
+# --- Redundant bundle (same content as the tracked SOCWatch-Evidence/ folder, kept local-only) ---
+SOCWatch-Evidence.zip
+
+# --- OS/editor noise ---
+Thumbs.db
+.DS_Store
+
+# --- Local tooling config, not part of the project deliverable ---
+.claude/

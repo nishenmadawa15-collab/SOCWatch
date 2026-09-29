@@ -1,0 +1,9 @@
+
+Wazuh agent_control. List of available agents:
+   ID: 000, Name: ip-10-0-8-82 (server), IP: 127.0.0.1, Active/Local
+   ID: 001, Name: ip-10-0-0-164, IP: any, Active
+   ID: 002, Name: ip-10-0-11-208, IP: any, Active
+   ID: 003, Name: agent-windows-1, IP: any, Active
+
+List of agentless devices:
+

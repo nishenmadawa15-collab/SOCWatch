@@ -1,0 +1,15 @@
+Captured via SSH, 2026-09-24
+
+=== wazuh-manager.service ===
+Active: active (running) since Tue 2026-09-22 16:23:20 UTC
+Sub-processes running: wazuh-authd, wazuh-db, wazuh-execd, wazuh-analysisd,
+wazuh-syscheckd, wazuh-remoted, wazuh-logcollector, wazuh-monitord, wazuh-modulesd
+
+=== wazuh-indexer.service ===
+Active: active (running) since Tue 2026-09-22 16:23:40 UTC
+OpenSearch 2.19.5, Main PID 670
+
+=== wazuh-dashboard.service ===
+Active: active (running) since Tue 2026-09-22 16:23:01 UTC
+
+All three core services active (running) as required for Week 3 checkpoint.

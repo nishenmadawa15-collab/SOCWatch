@@ -1,0 +1,6 @@
+Captured via SSH, 2026-09-24
+$ sudo /var/ossec/bin/wazuh-control info
+
+WAZUH_VERSION="v4.14.7"
+WAZUH_REVISION="rc1"
+WAZUH_TYPE="server"
