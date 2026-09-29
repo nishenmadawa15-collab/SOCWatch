@@ -21,3 +21,4 @@ Thumbs.db
 
 # --- Local tooling config, not part of the project deliverable ---
 .claude/
+scheduled-push.log
