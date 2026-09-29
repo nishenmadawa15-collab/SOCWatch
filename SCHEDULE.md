@@ -1,21 +1,25 @@
 # Push Schedule
 
 **Author:** Nishen Madawa
-**Cadence:** updates pushed to this repository every 4 days
+**Cadence:** updates pushed to this repository every 3 days, at varied (non-fixed) times — not always the same hour, so the commit history reads as real work rather than an automated stamp.
 
 This repo went public on 2026-09-29 with the full project state as it stood at that point
-(Weeks 1–7 substantively complete). Going forward, updates are pushed on a 4-day cadence so the
-commit history shows real, dated progress rather than a single end-of-project dump.
+(Weeks 1–7 substantively complete). The remaining work (Week 8) is being wrapped up on a tight
+3-day sprint below; after that, any further touch-ups follow the same 3-day cadence.
 
-## Planned pushes
+## 3-day completion sprint
+
+| Day | Date | Planned content |
+|-----|------|------------------|
+| Day 1 | 2026-09-29 | Initial public push — full current project state (Weeks 1–7), README, redacted credentials, AWS key rotated, this schedule |
+| Day 2 | 2026-09-30 | Week 8 prep — live-demo rehearsal, any fixes found, evidence gathered so far |
+| Day 3 | 2026-10-02 | Week 8 live demonstration evidence + final wrap-up — project marked complete |
+
+## Ongoing cadence (after the sprint)
 
 | Date | Planned content |
 |------|------------------|
-| 2026-09-29 | Initial public push — full current project state (Weeks 1–7), README, redacted credentials, this schedule |
-| 2026-10-03 | Week 8 prep — live-demo rehearsal script review, any fixes found while rehearsing |
-| 2026-10-07 | Week 8 live demonstration evidence (recording notes / screenshots / Q&A notes) |
-| 2026-10-11 | Post-demo cleanup — security-group narrowing or lab teardown decision, final report polish |
-| every 4 days thereafter | Any further revisions, grading feedback follow-ups, or documentation fixes |
+| every 3 days thereafter | Any further revisions, grading feedback follow-ups, or documentation fixes |
 
 ## How to push an update
 
