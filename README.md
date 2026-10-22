@@ -1,5 +1,9 @@
 # SOCWatch — Wazuh SOC Monitoring Lab
 
+<p align="center">
+  <img src="media/socwatch-thumbnail.jpg" alt="SOCWatch — My servers got attacked. I caught it." width="820">
+</p>
+
 ![Wazuh](https://img.shields.io/badge/Wazuh-SIEM%20%2F%20XDR-3B82F6?style=flat-square)
 ![AWS](https://img.shields.io/badge/AWS-EC2%20%7C%20VPC%20%7C%20IAM-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white)
 ![Endpoints](https://img.shields.io/badge/Endpoints-Ubuntu%20%C2%B7%20Debian%20%C2%B7%20Windows%20Server-0b0f14?style=flat-square)
@@ -10,16 +14,12 @@
 
 ## 🎬 Watch the 60-second demo
 
-<p align="center">
-  <a href="media/socwatch-promo.mp4">
-    <img src="media/socwatch-thumbnail.jpg" alt="SOCWatch demo video — My servers got attacked. I caught it." width="820">
-  </a>
-  <br>
-  <sub>▶ Click the image to play — architecture, log ingestion, FIM, CVE detection and a real SSH brute-force alert (Rule 5712, level 10).</sub>
-</p>
+https://github.com/user-attachments/assets/fa51d437-d311-4568-961f-0ebc60ce3674
 
-**Author:** Nishen Madava Abedeera
-**Project:** CCA Cyber Security Internship — 8-week individual project
+<sub>▶ Press play — architecture, log ingestion, FIM, CVE detection and a real SSH brute-force alert (Rule 5712, level 10). Full-size file: <a href="media/socwatch-promo.mp4">media/socwatch-promo.mp4</a></sub>
+
+**Author:** Nishen Madava Abedeera  
+**Project:** CCA Cyber Security Internship — 8-week individual project  
 **Status:** Weeks 1–7 substantively complete; Week 8 (live demonstration) remaining (~97% overall)
 
 ## Overview
