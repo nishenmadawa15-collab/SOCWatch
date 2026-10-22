@@ -1,5 +1,13 @@
 # SOCWatch — Wazuh SOC Monitoring Lab
 
+![Wazuh](https://img.shields.io/badge/Wazuh-SIEM%20%2F%20XDR-3B82F6?style=flat-square)
+![AWS](https://img.shields.io/badge/AWS-EC2%20%7C%20VPC%20%7C%20IAM-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white)
+![Endpoints](https://img.shields.io/badge/Endpoints-Ubuntu%20%C2%B7%20Debian%20%C2%B7%20Windows%20Server-0b0f14?style=flat-square)
+![Use cases](https://img.shields.io/badge/Detection%20use%20cases-4-56e0c0?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Week%208%20remaining-F59E0B?style=flat-square)
+
+> **TL;DR** — A cloud SOC lab: 1 Wazuh manager + 3 monitored endpoints on AWS, proving log ingestion, file-integrity monitoring, vulnerability detection and brute-force detection with real captured evidence.
+
 **Author:** Nishen Madawa
 **Project:** CCA Cyber Security Internship — 8-week individual project
 **Status:** Weeks 1–7 substantively complete; Week 8 (live demonstration) remaining (~97% overall)
