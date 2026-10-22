@@ -8,7 +8,17 @@
 
 > **TL;DR** — A cloud SOC lab: 1 Wazuh manager + 3 monitored endpoints on AWS, proving log ingestion, file-integrity monitoring, vulnerability detection and brute-force detection with real captured evidence.
 
-**Author:** Nishen Madawa
+## 🎬 Watch the 60-second demo
+
+<p align="center">
+  <a href="media/socwatch-promo.mp4">
+    <img src="media/socwatch-thumbnail.jpg" alt="SOCWatch demo video — My servers got attacked. I caught it." width="820">
+  </a>
+  <br>
+  <sub>▶ Click the image to play — architecture, log ingestion, FIM, CVE detection and a real SSH brute-force alert (Rule 5712, level 10).</sub>
+</p>
+
+**Author:** Nishen Madava Abedeera
 **Project:** CCA Cyber Security Internship — 8-week individual project
 **Status:** Weeks 1–7 substantively complete; Week 8 (live demonstration) remaining (~97% overall)
 
@@ -72,4 +82,4 @@ the actual access controls, and this is torn down/narrowed after grading.
 
 ## License
 
-© Nishen Madawa. Coursework project for the CCA Cyber Security Internship programme.
+© Nishen Madava Abedeera. Coursework project for the CCA Cyber Security Internship programme.
